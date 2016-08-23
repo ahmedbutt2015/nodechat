@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatify</title>
+    <style>
+        .chatform{
+            display : none;
+        }
+    </style>
+</head>
+<body>
+<div class="chatform">
+    <div id="chat"></div>
+    <input type="hidden" id="myname">
+    <input type="text" id="msg">
+</div>
+
+<div class="user">
+    <label for="name">Enter Name : </label><input type="text" id="name">
+</div>
+
+<script src= "node_modules/jquery/dist/jquery.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="sendMessage.js"></script>
+</body>
+</html>
